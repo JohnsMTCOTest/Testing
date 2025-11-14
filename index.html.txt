@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Dashboard Screen -->
+        <div class="dashboard" id="dashboard">
+            <h1>🎯 Quiz Challenge</h1>
+            <p class="subtitle">Test your knowledge with 15 random questions!</p>
+            <button class="start-button" onclick="startQuiz()">Take the Test</button>
+        </div>
+
+```
+    <!-- Quiz Screen -->
+    <div class="quiz-container" id="quizContainer">
+        <div class="question-header">
+            <span class="question-number" id="questionNumber">Question 1/15</span>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <div class="question-text" id="questionText"></div>
+
+        <div class="options" id="optionsContainer"></div>
+
+        <div class="navigation">
+            <button class="nav-button" id="prevButton" onclick="previousQuestion()" disabled>Previous</button>
+            <button class="nav-button" id="nextButton" onclick="nextQuestion()">Next</button>
+        </div>
+    </div>
+
+    <!-- Results Screen -->
+    <div class="results" id="results">
+        <h1>🎉 Quiz Complete!</h1>
+        <div class="score" id="scoreDisplay"></div>
+        <p class="score-message" id="scoreMessage"></p>
+        <button class="restart-button" onclick="restartQuiz()">Take Quiz Again</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+```
+
+</body>
+</html>
